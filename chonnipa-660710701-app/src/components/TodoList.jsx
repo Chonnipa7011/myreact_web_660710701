@@ -3,10 +3,13 @@ import React, { useState } from 'react';
 const TodoList = () => {
     // ใช้ useState แทน const ธรรมดา
     const [todos, setTodos] = useState([
-        { id: 1, text: 'ตื่นนอน', completed: true },
-        { id: 2, text: 'ฝึกโค้ด / แก้บัค', completed: true },
-        { id: 3, text: 'ทำความเข้าใจโค้ด', completed: false },
-        { id: 4, text: 'สร้างโปรเจคจริง', completed: false }
+        { id: 1, text: 'Monday (วันจันทร์) อ่านหนังสือ', completed: true },
+        { id: 2, text: 'Tuesday (วันอังคาร) ฝึกโค้ด / แก้บัค', completed: true },
+        { id: 3, text: 'Wednesday (วันพุธ) ทำความเข้าใจโค้ด', completed: false },
+        { id: 4, text: 'Thursday (วันพฤหัสบดี) นอนเล่น', completed: false },
+        { id: 5, text: 'Friday (วันศุกร์) กลับบ้าน', completed: false },
+        { id: 6, text: 'Saturday (วันเสาร์) ทำการบ้าน', completed: false },
+        { id: 7, text: 'Sunday (วันอาทิตย์) เช็คการบ้านก่อนส่ง', completed: false }
     ]);
 
     // ฟังก์ชันสลับสถานะ completed
